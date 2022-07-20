@@ -17,8 +17,26 @@
       <h1 class="page-title">Taskinator</h1>
 
       <p>Click the button bellow</p>
+      <form id="task-form">
+        <div class="form-group">
+          <input type="text" name="task-name" placeholder="Enter Task Name" />
+        </div>
 
-      <button class="btn" id="save-task">Add Task</button>
+        <div class="form-group">
+          <select name="task-type" class="select-dropdown">
+            <option value="" disabled selected>Pick a task type</option>
+            <option value="Chores">Chores</option>
+            <option value="Homework">Homework</option>
+            <option value="Personal Projects">Personal Projects</option>
+            <option value="Kid Stuff">Kid Stuff</option>
+            <option value="Work">Work</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <button class="btn" id="save-task">Add Task</button>
+        </div>
+      </form>
     </header>
 
     <main class="page-content">
